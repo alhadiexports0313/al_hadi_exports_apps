@@ -75,27 +75,69 @@ export default function Home() {
       {/* Hero Section */}
       <section id="home" className="pt-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Premium Garment
-              <span className="block text-teal-400">Manufacturing & Export</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
-              Leading the global textile industry with exceptional quality, innovative designs, and reliable export services. Your trusted partner for premium garment manufacturing.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#contact"
-                className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-              >
-                Get Quote
-              </a>
-              <a
-                href="#services"
-                className="border-2 border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
-              >
-                Our Services
-              </a>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Hero Content */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                AL HADI
+                <span className="block text-teal-400">EXPORTS</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl">
+                A Leading Manufacturer and Exporter of High-Quality Knit and Retail Garments.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Download Company Profile (PDF)
+                </button>
+                <a
+                  href="#products"
+                  className="border-2 border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-slate-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center"
+                >
+                  Explore Our Products
+                </a>
+              </div>
+            </div>
+
+            {/* Hero Visual */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Global Shipping & Textile Visual */}
+                <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-teal-500/20 to-slate-700/30 rounded-full flex items-center justify-center backdrop-blur-sm border border-teal-400/30">
+                  <div className="text-center">
+                    {/* Globe with shipping routes */}
+                    <svg className="w-32 h-32 md:w-40 md:h-40 text-teal-400 mb-4 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10" strokeWidth="1.5"/>
+                      <path d="M2 12h20" strokeWidth="1.5"/>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" strokeWidth="1.5"/>
+                      <path d="M8 12c0-4 2-8 4-8s4 4 4 8-2 8-4 8-4-4-4-8z" strokeWidth="1"/>
+                    </svg>
+                    {/* Textile/Fabric representation */}
+                    <div className="flex justify-center space-x-2 mb-2">
+                      <div className="w-3 h-8 bg-teal-400 rounded-full opacity-80"></div>
+                      <div className="w-3 h-6 bg-teal-300 rounded-full opacity-60"></div>
+                      <div className="w-3 h-10 bg-teal-500 rounded-full opacity-90"></div>
+                      <div className="w-3 h-7 bg-teal-400 rounded-full opacity-70"></div>
+                    </div>
+                    <p className="text-teal-300 text-sm font-medium">Global Textile Excellence</p>
+                  </div>
+                </div>
+                
+                {/* Floating elements */}
+                <div className="absolute -top-4 -right-4 w-16 h-16 bg-teal-500/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-teal-400/40">
+                  <svg className="w-8 h-8 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                  </svg>
+                </div>
+                
+                <div className="absolute -bottom-6 -left-6 w-20 h-20 bg-slate-700/30 rounded-full flex items-center justify-center backdrop-blur-sm border border-slate-500/40">
+                  <svg className="w-10 h-10 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
