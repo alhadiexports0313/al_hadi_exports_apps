@@ -1,9 +1,168 @@
 'use client';
 
 import { useState } from 'react';
+import jsPDF from 'jspdf';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const downloadPDF = () => {
+    const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.width;
+    const margin = 20;
+    const lineHeight = 7;
+    let yPosition = 30;
+
+    // Helper function to add text with word wrapping
+    const addText = (text: string, fontSize = 12, isBold = false, isTitle = false) => {
+      doc.setFontSize(fontSize);
+      if (isBold) {
+        doc.setFont('helvetica', 'bold');
+      } else {
+        doc.setFont('helvetica', 'normal');
+      }
+      
+      if (isTitle) {
+        doc.setTextColor(0, 128, 128); // Teal color for titles
+      } else {
+        doc.setTextColor(0, 0, 0); // Black for regular text
+      }
+
+      const lines = doc.splitTextToSize(text, pageWidth - 2 * margin);
+      lines.forEach((line: string) => {
+        if (yPosition > 270) {
+          doc.addPage();
+          yPosition = 30;
+        }
+        doc.text(line, margin, yPosition);
+        yPosition += lineHeight;
+      });
+      yPosition += 3; // Extra spacing after text blocks
+    };
+
+    // Header
+    doc.setFillColor(0, 128, 128);
+    doc.rect(0, 0, pageWidth, 25, 'F');
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(20);
+    doc.setFont('helvetica', 'bold');
+    doc.text('AL HADI EXPORTS', pageWidth / 2, 16, { align: 'center' });
+    
+    yPosition = 35;
+    
+    // Company Overview
+    addText('COMPANY PROFILE', 16, true, true);
+    addText('A Leading Manufacturer and Exporter of High-Quality Knit and Retail Garments', 14, true);
+    addText('AL HADI EXPORTS is a premier textile manufacturing company specializing in high-quality knit and retail garments. With over 15 years of experience in the industry, we have established ourselves as a trusted partner for global brands and retailers across the United States, Europe, and Asia-Pacific regions.');
+    
+    // Core Values
+    addText('CORE VALUES', 14, true, true);
+    addText('• Innovation - Embracing cutting-edge technology and creative solutions');
+    addText('• Integrity - Maintaining the highest ethical standards in all operations');
+    addText('• Excellence - Delivering superior quality in every product and service');
+    addText('• Partnership - Building long-term relationships with clients and stakeholders');
+    
+    // Product Range
+    addText('PRODUCT SPECIALIZATION', 14, true, true);
+    addText('Knit Fashion Expertise:');
+    addText('• T-Shirts & Polo Shirts - Premium cotton and cotton blends with superior comfort and durability');
+    addText('• Hoodies & Sweatshirts - Cozy fleece and cotton blends perfect for casual and athletic wear');
+    addText('• Tank Tops & Vests - Lightweight and breathable designs for active lifestyles');
+    addText('• Activewear - Performance fabrics with moisture-wicking and stretch properties');
+    addText('• Casual Wear - Trendy and comfortable everyday clothing options');
+    addText('• Children\'s Apparel - Safe, comfortable, and fun designs for kids of all ages');
+    
+    // Manufacturing Capabilities
+    addText('STATE-OF-THE-ART PRODUCTION CAPABILITIES', 14, true, true);
+    
+    addText('Stitching Facility:', 12, true);
+    addText('• 50+ Flat Lock Machines - Precision stitching for seamless finishes');
+    addText('• 75+ Single Needle Machines - Detailed work and intricate designs');
+    addText('• 60+ Over Lock Machines - Professional edge finishing and seaming');
+    addText('• Advanced pattern making and sampling capabilities');
+    addText('• Quality control at every production stage');
+    
+    addText('Finishing & Dyeing:', 12, true);
+    addText('• 5 Jet Machines - High-efficiency fabric processing');
+    addText('• 3 Soft Flow Systems - Gentle treatment for delicate fabrics');
+    addText('• 4 Winch Machines - Continuous fabric processing');
+    addText('• 2 Industrial Dryers - Controlled drying processes');
+    addText('• 1 Stenter+Sliter - Precision fabric finishing and width control');
+    addText('• Eco-friendly dyeing processes with water recycling systems');
+    
+    // Quality & Certifications
+    addText('QUALITY ASSURANCE & CERTIFICATIONS', 14, true, true);
+    
+    addText('International Certifications:', 12, true);
+    addText('• SEDEX - Ethical trade and responsible business practices');
+    addText('• BSCI - Business Social Compliance Initiative certification');
+    addText('• HIGG - Sustainable manufacturing and environmental responsibility');
+    addText('• Accord Pakistan Inspection - Safety and compliance standards');
+    
+    addText('Core Strengths:', 12, true);
+    addText('• Strong global network spanning multiple continents');
+    addText('• Capability to execute complex and large-scale orders');
+    addText('• In-house expertise in sampling and pattern making');
+    addText('• Competitive pricing with strict quality controls');
+    addText('• Wide variety of prints, washes, and finishing options');
+    addText('• Specialized dyeing and finishing capabilities');
+    
+    // Global Clientele
+    addText('GLOBAL PARTNERSHIPS', 14, true, true);
+    addText('24+ Global Partners across 3 Continents with 99% Client Satisfaction Rate');
+    
+    addText('United States Partners:', 12, true);
+    addText('Cotton & Else, Basix of America, Buda-Bean, U.S Apparel, Decibal, BMGM, Cuffy\'s, TopImage, Family Dollar, Bonghwa, Exist Inc., Happy Kids, Walmart (USA & Brazil)');
+    
+    addText('European Partners:', 12, true);
+    addText('Newlook, Stedyvarious, Newyorker, Auchan, Primemark, KIK, Woolworth, TEDI, Instyle, LPP');
+    
+    addText('Middle East Partners:', 12, true);
+    addText('Prime Polo (Saudi Arabia)');
+    
+    // Services
+    addText('COMPREHENSIVE SERVICES', 14, true, true);
+    
+    addText('Custom Manufacturing:', 12, true);
+    addText('• Pattern development and sampling');
+    addText('• Fabric sourcing and selection');
+    addText('• Quality control and testing');
+    addText('• Bulk production management');
+    
+    addText('Global Export:', 12, true);
+    addText('• International shipping and logistics');
+    addText('• Export documentation and compliance');
+    addText('• Customs clearance assistance');
+    addText('• Supply chain management');
+    
+    addText('Quality Assurance:', 12, true);
+    addText('• Pre-production quality planning');
+    addText('• In-line production monitoring');
+    addText('• Final inspection and testing');
+    addText('• Compliance certification');
+    
+    // Contact Information
+    addText('CONTACT INFORMATION', 14, true, true);
+    addText('Location: Karachi, Pakistan - Industrial Area, Export Processing Zone');
+    addText('Email: info@alhadiexports.com');
+    addText('Experience: 15+ Years in Textile Manufacturing and Export');
+    addText('Specialization: High-Quality Knit and Retail Garments');
+    
+    // Footer
+    if (yPosition > 250) {
+      doc.addPage();
+      yPosition = 30;
+    }
+    yPosition = 280;
+    doc.setFillColor(0, 128, 128);
+    doc.rect(0, yPosition, pageWidth, 15, 'F');
+    doc.setTextColor(255, 255, 255);
+    doc.setFontSize(10);
+    doc.text('AL HADI EXPORTS - Excellence in Textile Manufacturing', pageWidth / 2, yPosition + 8, { align: 'center' });
+    
+    // Save the PDF
+    doc.save('AL_HADI_EXPORTS_Profile.pdf');
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -27,7 +186,10 @@ export default function Home() {
 
             {/* Download Company Profile Button */}
             <div className="hidden md:flex">
-              <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors flex items-center gap-2">
+              <button 
+                onClick={downloadPDF}
+                className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors flex items-center gap-2"
+              >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
@@ -59,7 +221,10 @@ export default function Home() {
                 <a href="#certifications" className="block px-3 py-2 text-slate-700 hover:text-teal-600">Certifications</a>
                 <a href="#contact" className="block px-3 py-2 text-slate-700 hover:text-teal-600">Contact</a>
                 <div className="px-3 py-2">
-                  <button className="w-full bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2">
+                  <button 
+                    onClick={downloadPDF}
+                    className="w-full bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+                  >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
@@ -86,7 +251,10 @@ export default function Home() {
                 A Leading Manufacturer and Exporter of High-Quality Knit and Retail Garments.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2">
+                <button 
+                  onClick={downloadPDF}
+                  className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors flex items-center justify-center gap-2"
+                >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
