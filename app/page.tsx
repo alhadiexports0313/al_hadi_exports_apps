@@ -143,6 +143,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Vision & Mission Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Vision & Commitment</h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Vision */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 p-8 md:p-12 rounded-2xl shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900">Vision</h3>
+              </div>
+              <p className="text-lg text-slate-700 leading-relaxed">
+                "To be recognized as a trusted partner in the textile industry, delivering premium products with innovation and integrity."
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-8 md:p-12 rounded-2xl shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900">Mission</h3>
+              </div>
+              <p className="text-lg text-slate-700 leading-relaxed">
+                "To expand our global footprint by developing strong relationships with reputed buyers and customers worldwide."
+              </p>
+            </div>
+          </div>
+
+          {/* Additional Visual Elements */}
+          <div className="mt-16 text-center">
+            <div className="flex justify-center items-center space-x-8 opacity-60">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+                <span className="text-sm text-slate-600 font-medium">Innovation</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+                <span className="text-sm text-slate-600 font-medium">Integrity</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+                <span className="text-sm text-slate-600 font-medium">Excellence</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-teal-500 rounded-full"></div>
+                <span className="text-sm text-slate-600 font-medium">Partnership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Products Section */}
       <section id="products" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
