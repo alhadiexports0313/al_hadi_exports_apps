@@ -324,76 +324,325 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Facilities Section */}
+      {/* Manufacturing and Facilities Section */}
       <section id="facilities" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Facilities</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">State-of-the-Art Production Capabilities</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              State-of-the-art manufacturing facilities equipped with modern technology and skilled workforce.
+              Advanced manufacturing facilities equipped with cutting-edge technology and precision machinery for superior garment production.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Manufacturing Excellence</h3>
-              <p className="text-slate-600 mb-6">
-                Our modern production facility spans over 50,000 square feet, housing advanced machinery 
-                and equipment for efficient garment manufacturing. We maintain strict quality standards 
-                throughout our production process.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-teal-600 mb-2">50,000</div>
-                  <div className="text-slate-600">Sq Ft Facility</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-teal-600 mb-2">200+</div>
-                  <div className="text-slate-600">Skilled Workers</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          {/* Two-Column Layout */}
+          <div className="grid lg:grid-cols-2 gap-16">
+            
+            {/* Stitching Facility */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Advanced Machinery</h4>
-                <p className="text-slate-600 text-sm">Latest sewing and cutting equipment</p>
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900">Stitching Facility</h3>
+                  <p className="text-teal-600 font-semibold">Equipped with state-of-the-art stitching machinery</p>
+                </div>
               </div>
 
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {/* Flat Lock */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">85</div>
+                  <div className="text-sm font-semibold text-slate-600">Flat Lock</div>
+                  <div className="text-xs text-slate-500 mt-1">Machines</div>
                 </div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Quality Control</h4>
-                <p className="text-slate-600 text-sm">Dedicated QC department</p>
+
+                {/* Single Needle */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+                    </svg>
+                  </div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">129</div>
+                  <div className="text-sm font-semibold text-slate-600">Single Needle</div>
+                  <div className="text-xs text-slate-500 mt-1">Machines</div>
+                </div>
+
+                {/* Over Lock */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                    </svg>
+                  </div>
+                  <div className="text-3xl font-bold text-slate-900 mb-1">155</div>
+                  <div className="text-sm font-semibold text-slate-600">Over Lock</div>
+                  <div className="text-xs text-slate-500 mt-1">Machines</div>
+                </div>
               </div>
 
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+              <div className="mt-6 p-4 bg-white rounded-lg border border-slate-200">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-teal-600 mb-1">369</div>
+                  <div className="text-sm text-slate-600">Total Stitching Machines</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Finishing & Dyeing */}
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-8">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4 4 4 0 004-4V5z" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Warehouse</h4>
-                <p className="text-slate-600 text-sm">Climate-controlled storage</p>
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900">Finishing & Dyeing</h3>
+                  <p className="text-teal-600 font-semibold">Advanced Dyeing Unit for Highest Quality Finishing</p>
+                </div>
               </div>
 
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+              <div className="space-y-4">
+                {/* SWF Embroidery */}
+                <div className="bg-white rounded-xl p-4 flex items-center shadow-sm border border-slate-200">
+                  <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-slate-900">SWF 20-Head Embroidery</div>
+                    <div className="text-sm text-slate-600">High-precision embroidery machines</div>
+                  </div>
+                  <div className="text-lg font-bold text-teal-600">20</div>
                 </div>
-                <h4 className="text-lg font-semibold text-slate-900 mb-2">Power Backup</h4>
-                <p className="text-slate-600 text-sm">Uninterrupted production</p>
+
+                {/* Jet Machines */}
+                <div className="bg-white rounded-xl p-4 flex items-center shadow-sm border border-slate-200">
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-slate-900">High-Capacity Jet</div>
+                    <div className="text-sm text-slate-600">Advanced dyeing technology</div>
+                  </div>
+                </div>
+
+                {/* Soft Flow */}
+                <div className="bg-white rounded-xl p-4 flex items-center shadow-sm border border-slate-200">
+                  <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-5 h-5 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-slate-900">Soft Flow</div>
+                    <div className="text-sm text-slate-600">Gentle fabric processing</div>
+                  </div>
+                </div>
+
+                {/* Winch */}
+                <div className="bg-white rounded-xl p-4 flex items-center shadow-sm border border-slate-200">
+                  <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="font-semibold text-slate-900">Winch</div>
+                    <div className="text-sm text-slate-600">Continuous dyeing process</div>
+                  </div>
+                </div>
+
+                {/* Dryer & Stenter+Sliter */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="bg-white rounded-xl p-4 text-center shadow-sm border border-slate-200">
+                    <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" />
+                      </svg>
+                    </div>
+                    <div className="font-semibold text-slate-900 text-sm">Dryer</div>
+                    <div className="text-xs text-slate-600">Heat treatment</div>
+                  </div>
+                  <div className="bg-white rounded-xl p-4 text-center shadow-sm border border-slate-200">
+                    <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                      <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="font-semibold text-slate-900 text-sm">Stenter+Sliter</div>
+                    <div className="text-xs text-slate-600">Finishing process</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality and Strengths Section */}
+      <section id="quality" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Quality and Strengths</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Certified excellence and proven capabilities that set us apart in the global textile industry.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Certifications Subsection */}
+            <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">Certifications</h3>
+                <p className="text-slate-600">Trusted by international standards and compliance frameworks</p>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                {/* SEDEX */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
+                  <div className="font-bold text-slate-900 text-lg">SEDEX</div>
+                  <div className="text-sm text-slate-600 mt-1">Ethical Trade</div>
+                </div>
+
+                {/* BSCI */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="font-bold text-slate-900 text-lg">BSCI</div>
+                  <div className="text-sm text-slate-600 mt-1">Social Compliance</div>
+                </div>
+
+                {/* HIGG */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                  <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div className="font-bold text-slate-900 text-lg">HIGG</div>
+                  <div className="text-sm text-slate-600 mt-1">Sustainability Index</div>
+                </div>
+
+                {/* Accord Pakistan Inspection */}
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
+                  </div>
+                  <div className="font-bold text-slate-900 text-lg">Accord Pakistan</div>
+                  <div className="text-sm text-slate-600 mt-1">Safety Inspection</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Core Strengths Subsection */}
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">Core Strengths</h3>
+                <p className="text-slate-600">Key capabilities that drive our success in global markets</p>
+              </div>
+
+              <div className="space-y-6">
+                {/* Strong global network */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 text-lg">Strong Global Network</div>
+                    <div className="text-slate-600 mt-1">Established partnerships across 50+ countries worldwide</div>
+                  </div>
+                </div>
+
+                {/* Capability to execute complex orders */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 text-lg">Complex Order Execution</div>
+                    <div className="text-slate-600 mt-1">Advanced capability to handle intricate and large-scale orders</div>
+                  </div>
+                </div>
+
+                {/* In-house expertise in sampling & pattern making */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 text-lg">In-House Sampling & Pattern Making</div>
+                    <div className="text-slate-600 mt-1">Expert design and prototyping capabilities under one roof</div>
+                  </div>
+                </div>
+
+                {/* Competitive pricing with strict controls */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 text-lg">Competitive Pricing with Strict Controls</div>
+                    <div className="text-slate-600 mt-1">Cost-effective solutions without compromising on quality</div>
+                  </div>
+                </div>
+
+                {/* Wide variety of prints and washes */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 text-lg">Wide Variety of Prints and Washes</div>
+                    <div className="text-slate-600 mt-1">Extensive range of finishing options and design capabilities</div>
+                  </div>
+                </div>
+
+                {/* Specialized dyeing and finishing options */}
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-slate-900 text-lg">Specialized Dyeing and Finishing</div>
+                    <div className="text-slate-600 mt-1">Advanced techniques for premium fabric treatments</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
