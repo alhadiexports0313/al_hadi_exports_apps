@@ -649,24 +649,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Clients Section */}
+      {/* Global Clientele Section */}
       <section id="clients" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Valued Clients</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Global Partners</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Trusted by leading brands and retailers across the globe for quality and reliability.
+              Trusted partnerships with leading brands and retailers across the globe, delivering excellence in every market.
             </p>
           </div>
 
+          {/* Statistics */}
           <div className="grid md:grid-cols-4 gap-8 mb-16">
             <div className="text-center">
-              <div className="text-4xl font-bold text-teal-600 mb-2">500+</div>
-              <div className="text-slate-600">Global Clients</div>
+              <div className="text-4xl font-bold text-teal-600 mb-2">24+</div>
+              <div className="text-slate-600">Global Partners</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-teal-600 mb-2">50+</div>
-              <div className="text-slate-600">Countries</div>
+              <div className="text-4xl font-bold text-teal-600 mb-2">3</div>
+              <div className="text-slate-600">Continents</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-teal-600 mb-2">15+</div>
@@ -678,23 +679,104 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">European Markets</h3>
-              <p className="text-slate-600 mb-4">Leading fashion retailers and brands across Europe trust us for premium quality garments.</p>
-              <div className="text-teal-600 font-semibold">UK • Germany • France • Italy</div>
+          {/* Regional Client Lists */}
+          <div className="space-y-12">
+            {/* USA Clients */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">United States</h3>
+                <p className="text-slate-600">Leading American brands and retailers</p>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {[
+                  "Cotton & Else", "Basix of America", "Buda-Bean", "U.S Apparel", "Decibal",
+                  "BMGM", "Cuffy's", "TopImage", "Family Dollar", "Bonghwa",
+                  "Exist Inc.", "Happy Kids", "Walmart (USA & Brazil)"
+                ].map((client, index) => (
+                  <div key={index} className="bg-slate-50 rounded-lg p-4 text-center hover:bg-slate-100 transition-colors">
+                    <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <div className="font-semibold text-slate-900 text-sm">{client}</div>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">North American Brands</h3>
-              <p className="text-slate-600 mb-4">Established partnerships with major clothing brands and department stores in North America.</p>
-              <div className="text-teal-600 font-semibold">USA • Canada • Mexico</div>
+            {/* Europe Clients */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Europe</h3>
+                <p className="text-slate-600">Premium European fashion retailers</p>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {[
+                  "Newlook", "Stedyvarious", "Newyorker", "Auchan", "Primemark",
+                  "KIK", "Woolworth", "TEDI", "Instyle", "LPP"
+                ].map((client, index) => (
+                  <div key={index} className="bg-slate-50 rounded-lg p-4 text-center hover:bg-slate-100 transition-colors">
+                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
+                      <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <div className="font-semibold text-slate-900 text-sm">{client}</div>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg text-center">
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Asia-Pacific Partners</h3>
-              <p className="text-slate-600 mb-4">Strong presence in Asian markets with growing partnerships across the region.</p>
-              <div className="text-teal-600 font-semibold">Australia • Japan • Singapore</div>
+            {/* Saudi Arabia Clients */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-teal-100 rounded-full mb-4">
+                  <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Saudi Arabia</h3>
+                <p className="text-slate-600">Middle Eastern market partners</p>
+              </div>
+              
+              <div className="flex justify-center">
+                <div className="bg-slate-50 rounded-lg p-6 text-center hover:bg-slate-100 transition-colors min-w-[200px]">
+                  <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <div className="font-bold text-slate-900 text-lg">Prime Polo</div>
+                  <div className="text-slate-600 text-sm mt-1">Premium Fashion Brand</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16">
+            <div className="bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Join Our Global Network</h3>
+              <p className="text-teal-100 mb-6 max-w-2xl mx-auto">
+                Ready to partner with a trusted manufacturer? Let's discuss how we can bring your vision to life with our proven expertise and global reach.
+              </p>
+              <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition-colors">
+                Start Partnership Discussion
+              </button>
             </div>
           </div>
         </div>
