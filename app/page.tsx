@@ -207,64 +207,119 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Product Range Section */}
       <section id="products" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Products</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Specializing in Knit Fashion</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Premium quality garments crafted with precision and attention to detail for global markets.
+              Discover our comprehensive range of premium knit garments, crafted with expertise and attention to detail for global markets.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {/* Fleece Hooded Jackets */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Men's Apparel</h3>
-              <ul className="text-slate-600 space-y-2">
-                <li>• Formal Shirts & Dress Shirts</li>
-                <li>• Casual Wear & T-Shirts</li>
-                <li>• Trousers & Chinos</li>
-                <li>• Polo Shirts & Sportswear</li>
-                <li>• Jackets & Outerwear</li>
-              </ul>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Fleece Hooded Jackets</h3>
+                <p className="text-sm text-slate-600">Premium fleece hoodies with superior comfort and warmth</p>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+            {/* Fleece Sweatshirts */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-teal-50 to-teal-100 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Women's Apparel</h3>
-              <ul className="text-slate-600 space-y-2">
-                <li>• Blouses & Formal Tops</li>
-                <li>• Dresses & Evening Wear</li>
-                <li>• Casual Wear & Tunics</li>
-                <li>• Skirts & Trousers</li>
-                <li>• Knitwear & Cardigans</li>
-              </ul>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Fleece Sweatshirts</h3>
+                <p className="text-sm text-slate-600">Cozy fleece sweatshirts for casual and athletic wear</p>
+              </div>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            {/* Nightwear's & Jog Suits */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4">Children's Wear</h3>
-              <ul className="text-slate-600 space-y-2">
-                <li>• School Uniforms</li>
-                <li>• Casual Play Wear</li>
-                <li>• Formal Children's Clothing</li>
-                <li>• Baby & Toddler Apparel</li>
-                <li>• Seasonal Collections</li>
-              </ul>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Nightwear's & Jog Suits</h3>
+                <p className="text-sm text-slate-600">Comfortable sleepwear and athletic jogging suits</p>
+              </div>
             </div>
+
+            {/* Knitted Round Neck / Pigment Dyed Tees */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Knitted Round Neck / Pigment Dyed Tees</h3>
+                <p className="text-sm text-slate-600">Premium knitted t-shirts with pigment dye finishes</p>
+              </div>
+            </div>
+
+            {/* Polos */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Polos</h3>
+                <p className="text-sm text-slate-600">Classic polo shirts for business and casual occasions</p>
+              </div>
+            </div>
+
+            {/* Kids & Toddler Apparel */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-yellow-50 to-yellow-100 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Kids & Toddler Apparel</h3>
+                <p className="text-sm text-slate-600">T-Shirts, Suits, Cardigans, Tank Tops for children</p>
+              </div>
+            </div>
+
+            {/* Boxer Shorts & Underwear */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div className="h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                <svg className="w-16 h-16 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Boxer Shorts & Underwear</h3>
+                <p className="text-sm text-slate-600">Premium comfort underwear and boxer shorts</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <p className="text-slate-600 mb-6">Interested in our complete product range?</p>
+            <button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download Complete Catalogue
+            </button>
           </div>
         </div>
       </section>
