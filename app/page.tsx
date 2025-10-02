@@ -247,9 +247,20 @@ export default function Home() {
                 AL HADI
                 <span className="block text-teal-400">EXPORTS</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl">
+              <p className="text-xl md:text-2xl text-slate-300 mb-6 max-w-2xl">
                 A Leading Manufacturer and Exporter of High-Quality Knit and Retail Garments.
               </p>
+              
+              {/* Enhanced Tagline */}
+              <div className="mb-8 max-w-3xl">
+                <p className="text-lg md:text-xl text-teal-300 font-medium mb-3">
+                  🌍 Trusted by Global Brands • 🏆 15+ Years Excellence • ✨ Quality Guaranteed
+                </p>
+                <p className="text-base md:text-lg text-slate-400 leading-relaxed">
+                  From concept to delivery, we transform your vision into premium garments that exceed expectations. 
+                  Building lasting partnerships through innovation, integrity, and uncompromising quality standards.
+                </p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <button 
                   onClick={downloadPDF}
@@ -1112,6 +1123,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+            
+            {/* Prominent Conclusion Statement */}
+            <div className="bg-gradient-to-r from-teal-600 to-teal-700 rounded-lg p-8 mb-8 max-w-4xl mx-auto">
+              <p className="text-xl md:text-2xl font-semibold text-white leading-relaxed">
+                "At Al HADI Exports, we believe that success is built on trust, quality, and partnership. 
+                We are committed to delivering excellence in every garment we produce and fostering 
+                long-term relationships with our valued clients worldwide."
+              </p>
+              <div className="mt-4 text-teal-100 font-medium">
+                — AL HADI EXPORTS Team
+              </div>
+            </div>
+            
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Ready to start your next project? Contact us today for a consultation and discover how we can help bring your vision to life.
             </p>
@@ -1300,7 +1324,20 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-slate-800 mt-12 pt-8">
+          {/* Footer Conclusion Statement */}
+          <div className="border-t border-slate-800 mt-12 pt-8 pb-6">
+            <div className="text-center mb-8">
+              <div className="max-w-3xl mx-auto">
+                <p className="text-lg text-slate-300 italic leading-relaxed">
+                  "Building bridges across continents through quality craftsmanship and unwavering commitment to excellence. 
+                  Your success is our mission, your trust is our foundation."
+                </p>
+                <div className="mt-3 text-teal-400 font-semibold">
+                  — AL HADI EXPORTS: Where Quality Meets Partnership
+                </div>
+              </div>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-4 items-center">
               <div className="text-slate-400">
                 <p>&copy; 2024 AL HADI EXPORTS. All rights reserved.</p>
